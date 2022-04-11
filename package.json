@@ -1,0 +1,28 @@
+{
+  "name": "co.isaga.wakelock",
+  "version": "1.0.0",
+  "description": "PowerManagement plugin for Cordova",
+  "cordova": {
+    "id": "co.isaga.wakelock",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leyenda/cordova-plugin-wakelock.git"
+  },
+  "keywords": [
+    "cordova",
+    "powermanagement",
+    "wakelock",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "ISAGA CO",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/leyenda/cordova-plugin-wakelock/issues"
+  },
+  "homepage": "https://github.com/leyenda/cordova-plugin-wakelock#readme"
+}

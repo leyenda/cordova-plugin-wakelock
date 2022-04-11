@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+        id="cordova-plugin-wakelock"
+        version="1.0.0">
+    <name>wakelock</name>
+    <description>PowerManagement plugin for Cordova</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,powermanagement,wakelock</keywords>
+
+    <js-module src="www/wakelock.js" name="device">
+        <clobbers target="window.wakelock" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WakeLock" >
+                <param name="android-package" value="co.isaga.wakelock.WakeLock" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+        </config-file>
+
+        <source-file src="src/android/co/isaga/wakelock/WakeLock.java" target-dir="src/co/isaga/wakelock/" />
+    </platform>
+</plugin>
